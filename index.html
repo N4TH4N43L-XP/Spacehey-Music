@@ -1,0 +1,436 @@
+<style>
+
+:root {
+ --even-lighter-blue: linear-gradient(to bottom, #65696a 0%, #616161 9%, #3c3c3c 18%, #000000 92%) center/cover no-repeat;
+}
+body {
+ background-image: url('https://preview.redd.it/finally-windows-xps-autumn-wallpaper-in-full-res-4200x2800-v0-3ma6nhepxbb81.jpg?width=640&crop=smart&auto=webp&s=45dc883d35a7a3421002a47c928ed31e05c11163');
+ background-size: cover;
+ background-position: center;
+ background-attachment: fixed;
+}
+.code:before {
+ height: 20px; width: auto;
+ display: block; content:"Spacehey music.html"; 
+ padding: .5em;
+ background: var(--even-lighter-blue);
+ border: 3px solid #000000;
+ border-radius: 10px 10px 0 0;
+ text-shadow: 2px 2px 0px #000;
+ font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+ font-size: 1em;
+ color: #FFF;
+}
+.code {
+ position: absolute;
+ top: 50px; left: 5%;
+ height: auto; width: auto;
+ background-color: #ffffff;
+ border: 3px solid #000000;
+ border-radius: 10px 10px 0 0;
+ overflow: auto;
+ z-index: 3;
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="code">
+	<h2>Layout Code</h2>
+	<p>Copy and paste to <strong>About Me</strong></p>
+<div class='innerbox'>
+<textarea rows='8' cols='50' onfocus='this.select();'>
+<!-- (c) Proyecto created by Spacehey Music (https://spacehey.com/spaceheymusic) -->
+
+&lt;style&gt;
+
+
+main {
+  position: relative;
+}
+:root {
+   --Banner1_image: url(https://images2.imgbox.com/24/6e/yngqs0eR_o.png); /*personalized*/
+   --Banner2_image: url(https://images2.imgbox.com/e5/50/59sFPBPh_o.png); /*personalized*/
+   --Banner3_image: url(https://images2.imgbox.com/24/6e/yngqs0eR_o.png); /*personalized*/
+}
+nav .links {
+  margin-bottom: 40px;
+}
+#Spacehey_Music_Nav  {
+  position: relative; 
+  position: absolute; 
+  top: -40px; left: 0px; 
+  height: 38px; width: 810px;
+  background: linear-gradient(#f6f6f6 13%, #CFCFCF);
+  border-bottom: 1px solid black;
+}
+#Spacehey_Music_Nav a {
+  color:Navy; 
+  font-size: 11px;
+  font-weight: normal; 
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  padding-left:   5px;
+  padding-right: 5px;
+  display: inline-block;
+}
+.SHM_0 {
+  height: 32px; width: 104px; 
+  background: url(https://i.postimg.cc/VvLB2K7r/Logo-SHM.png) no-repeat; 
+  background-size: 104px;
+  overflow: hidden; 
+  display: table-cell; 
+}
+
+/*Banner 1*/
+
+main:before {
+ height: 250px; width: auto;
+ display: block;content: ""; 
+ background-color:#1D4ED7;
+ background: var(--Banner1_image);
+ background-position: center center;
+ background-repeat: repeat;
+ background-size: 300px;
+ border: 3px solid #000000;
+}
+
+/*Mini Banner*/
+
+main .right:before{
+ height: 92px; width: auto;
+ display: block;content: ""; 
+ background-color:#1D4ED7;
+ background: var(--Banner2_image);
+ background-position: center center;
+ background-repeat: repeat;
+ background-size: 300px;
+ border: 3px solid #000000;
+ margin-bottom: 255px; /*increase if the table overlaps another table*/
+}
+
+/*Banner 3*/
+
+footer:before{
+ height: 150px; width: auto; 
+ display: block;content: ""; 
+ background-color:#1D4ED7;
+ background: var(--Banner3_image);
+ background-position: center center;
+ background-repeat: repeat;
+ background-size: 300px;
+ border: 3px solid #000000;
+}
+
+/* Genre List */
+
+.profile h1 {
+  inline-size: 190px;
+  width: auto;
+}
+.profile h1::after {
+  font-size: 8pt;
+  font-weight: bolder;
+  content: "\A Genre 1 / Genre 2 / Genre 3 ";   /*personalized*/
+  white-space: pre;
+}
+
+/*Extra table configuration*/
+
+.profile .Upcoming-Shows .heading,
+.profile .General-Info .heading {
+  background: #60A5FA;
+  background: var(--lighter-blue);
+  color: white;
+  padding: 2px 7px;
+}
+.profile .Upcoming-Shows,
+.profile .General-Info {
+  width: 100%;
+  border: 2px solid #60A5FA;
+  border: 2px solid var(--lighter-blue);
+  margin: 10px 0;
+}
+.profile .Upcoming-Shows {
+  position: relative; 
+  position: absolute; 
+  top: 380px;        /*position in a way that is needed*/
+  left: 333.80px;
+  width:467px;
+}
+.profile .General-Info {
+  position: relative; 
+  position: absolute; 
+  top: 760.50px;  /*position in a way that is needed*/
+  left: 9.80px; 
+  width:304px;
+}
+
+/*Important settings*/
+
+.edit-link {
+ display:none;
+}
+.mood {
+ padding: 3px;
+ margin-top: 10px;
+ margin-bottom: 10px;
+}
+.profile .url-info {
+ margin-bottom: 190px; /*increase if the table overlaps another table*/
+}
+.profile-info {
+ margin-bottom: 20px;
+}
+
+/*mobile version settings*/
+
+@media (max-width: 600px) {
+
+#Spacehey_Music_Nav  {
+ width: 411.60px;
+}
+main:before {
+ background-size: 300px;
+}
+main .right:before{
+ background-size: 300px;
+}
+.mood {
+ margin-bottom: 190px; /*increase if the table overlaps another table*/
+}
+.mood>:last-child b:first-child {
+ display:none;
+}
+.mood>:last-child b:first-child:before{
+ display:none;
+}
+.mood b a{
+ display:none;
+}
+.profile .contact {
+ display:none;
+}
+.contact {
+ position: absolute;
+ top: -5000%; left: 100px; 
+ display: table;  
+}
+.contact img {
+  display: none;
+}
+.contact .inner .f-row:nth-child(1) .f-col:nth-child(1) a {
+ display:none;
+}
+.contact .inner .f-row:nth-child(1) .f-col:nth-child(2) a {
+ display:none;
+}
+.contact .inner .f-row:nth-child(2) .f-col:nth-child(1) a {
+ display:none;
+}
+.contact .inner .f-row:nth-child(2) .f-col:nth-child(2) a {
+ display:none;
+}
+.contact .inner .f-row:nth-child(3) .f-col:nth-child(1) a {
+ display:none;
+}
+.contact .inner .f-row:nth-child(3) .f-col:nth-child(2) a {
+ display:none;
+}
+.contact .inner .f-row:nth-child(4) .f-col:nth-child(1) a {
+ display:none;
+}
+.contact .inner .f-row:nth-child(4) .f-col:nth-child(2) a {
+ display:none;
+}
+.profile .url-info {
+ display:none;
+}
+.profile-info {
+ display:none;
+}
+.blog-preview {
+ display:none;
+}
+.profile .Upcoming-Shows {
+  top: 1180px;  /*position in a way that is needed*/
+  left: 10px; 
+  width: 391px;
+}
+.profile .General-Info {
+  top: 550px;  /*position in a way that is needed*/
+  left: 10px; 
+  width: 391px;
+
+&lt;/style&gt;
+
+
+<!-- Spacehey Music - Nav Content -->
+
+<div class="Spacehey_Music_Nav">
+<table id="Spacehey_Music_Nav">
+<td>
+<a href="https://spacehey.com/topmusic" class="SHM_0"></a>
+</td>
+
+<td align="right">
+<a href="AQUI PON EL SITIO WEB DONDE SUBES TUS CANCIONES" class="SHM_1">my music</a> |
+<a href="HERE PUT THE WEBSITE WHERE YOU UPLOAD YOUR MUSIC VIDEOS" class="SHM_2">music videos</a> |
+
+<a href="https://blog.spacehey.com/entry?id=1625864" class="SHM_3">featured playlists</a> |
+<a href="https://blog.spacehey.com/entry?id=1626142" class="SHM_4">more artists</a> |
+
+<a href="PUT HERE A WEB PAGE WHERE YOUR CONCERTS ARE USUALLY HOSTED" class="SHM_5">shows</a> |
+
+<a href="https://groups.spacehey.com/myspacemusic" class="SHM_6">group</a> | 
+<a href="https://groups.spacehey.com/forum?id=36451" class="SHM_7">forums</a>
+</td>
+</table>
+</div>
+</textarea>
+</div>  
+
+
+
+	<h2>Layout Code</h2>
+	<p>Copy and paste to <strong>General</strong></p>
+<div class='innerbox'>
+<textarea rows='8' cols='50' onfocus='this.select();'>
+<!-- (c) Proyecto created by Spacehey Music (https://spacehey.com/spaceheymusic) -->
+<!--  General Info Table  -->
+
+<div class="General-Info">
+<div class="heading">
+<h4>The Jeff's General Info</h4></div>
+<div class="inner">
+<table class="details-table" cellspacing="3" cellpadding="3">
+<tbody>
+
+<!-- Members /*customizable*/ -->
+<tr><td><p>Members</p></td><td><p>
+xxxxxxxx
+</p></td></tr>
+
+
+<!-- Website /*customizable*/ -->
+<tr><td><p>Website</p></td><td><p>
+xxxxxxxx
+</p></td></tr>
+
+
+<!-- Influences /*customizable*/ -->
+<tr><td><p>Influences</p></td><td><p>
+xxxxxxxx
+</p></td></tr>
+
+
+<!-- Sounds Like /*customizable*/ -->
+<tr><td><p>Sounds Like</p></td><td><p>
+xxxxxxxx
+</p></td></tr>
+
+
+<!-- Record Label /*customizable*/ -->
+<tr><td><p>Record Label</p></td><td><p>
+xxxxxxxx
+</p></td></tr>
+
+
+<!-- Type of Label /*customizable*/ -->
+<tr><td><p>Type of Label</p></td><td><p>
+xxxxxxxx
+</p></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</textarea>
+</div>  
+
+
+
+	<h2>Layout Code</h2>
+	<p>Copy and paste to <strong>Music</strong></p>
+<div class='innerbox'>
+<textarea rows='8' cols='50' onfocus='this.select();'>
+<!-- (c) Proyecto created by Spacehey Music (https://spacehey.com/spaceheymusic) -->
+<!--  Upcoming Shows Table  -->
+
+<div class="Upcoming-Shows">
+<div class="heading">
+<h4>Upcoming Shows</h4></div>
+<div class="inner">
+<table class="details-table" cellspacing="3" cellpadding="3">
+<tbody>
+
+<!-- Date part 1 /*customizable*/ -->
+<tr><td><p>MM/DD/20XX</p></td>
+<td><p>00:00</p></td>
+<td><p><a href="xxxxxxxxx">Generic Concert Venue</a></p></td>
+<td><p>City, ST</p></td>
+
+
+<!-- Date part 2 /*customizable*/ -->
+</tr><tr><td><p>MM/DD/20XX</p></td>
+<td><p>00:00</p></td>
+<td><p><a href="xxxxxxxxx">Generic Concert Venue</a></p></td>
+<td><p>City, ST</p></td>
+
+
+<!-- Date part 3 /*customizable*/ -->
+</tr><tr><td><p>MM/DD/20XX</p></td>
+<td><p>00:00</p></td>
+<td><p><a href="xxxxxxxxx">Generic Concert Venue</a></p></td>
+<td><p>City, ST</p></td>
+
+
+<!-- Date part 4 /*customizable*/ -->
+</tr><tr><td><p>MM/DD/20XX</p></td>
+<td><p>00:00</p></td>
+<td><p><a href="xxxxxxxxx">Generic Concert Venue</a></p></td>
+<td><p>City, ST</p></td>
+
+
+<!-- Date part 5 /*customizable*/ -->
+</tr><tr><td><p>MM/DD/20XX</p></td>
+<td><p>00:00</p></td>
+<td><p><a href="xxxxxxxxx">Generic Concert Venue</a></p></td>
+<td><p>City, ST</p></td>
+
+
+<!-- Date part 6 /*customizable*/ -->
+</tr><tr><td><p>MM/DD/20XX</p></td>
+<td><p>00:00</p></td>
+<td><p><a href="xxxxxxxxx">Generic Concert Venue</a></p></td>
+<td><p>City, ST</p></td>
+
+
+<!-- Date part 7 /*customizable*/ -->
+</tr><tr><td><p>MM/DD/20XX</p></td>
+<td><p>00:00</p></td>
+<td><p><a href="xxxxxxxxx">Generic Concert Venue</a></p></td>
+<td><p>City, ST</p></td>
+
+
+<!-- Date part 8 /*customizable*/ -->
+</tr><tr><td><p>MM/DD/20XX</p></td>
+<td><p>00:00</p></td>
+<td><p><a href="xxxxxxxxx">Generic Concert Venue</a></p></td>
+<td><p>City, ST</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</textarea>
+</div>  
+
+</div></div></div></div>
