@@ -8,6 +8,9 @@ body {
  background-position: center;
  background-attachment: fixed;
 }
+
+/*CODE*/
+
 .code:before {
         display: block;
         padding-left: 5px;
@@ -37,6 +40,37 @@ color: #000;
 }
 .code textarea {
  height: auto; width: 450px;
+}
+
+/*VIDEO*/
+
+.video:before {
+        display: block;
+        padding-left: 5px;
+        padding-bottom: 1px;
+        border-bottom-style: groove;
+        background-image: url(https://i.imgur.com/CKX2NUO.png), linear-gradient(to right, #0c1058, #adcbe1);
+        background-repeat: no-repeat;
+        background-position: right;
+        content: "Spacehey TV - Microsoft Internet Explorer";  
+font-family: Times New Roman;
+font-size: 12px;
+font-weight: 600;
+color: #fff;
+}
+.video {
+ position: absolute;
+ top: 500px; left: 2%;
+ height: auto; width: 450px;
+        border-style: outset;
+        border-width: 2px;
+        border-color: #fff #000 #000 #fff;
+        background: #cfccc2;
+font-family: Times New Roman;
+font-size: 12px;
+font-weight: 600;
+color: #000;
+}
 
 </style>
 
@@ -50,6 +84,8 @@ color: #000;
 
 
 
+
+<!-- CODE -->
 
 <div class="code">
 	<h2>Layout Code</h2>
@@ -441,3 +477,9 @@ xxxxxxxx
 </div>  
 
 </div></div></div></div>
+
+<!-- VIDEO -->
+
+<div class="video">
+<iframe allowfullscreen src="https://www.vidlii.com/embed?v=CKtmh8ZqkDH&a=0" frameborder="0" width="450" height="300"></iframe>
+</div>
